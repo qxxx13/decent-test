@@ -1,9 +1,10 @@
+import { CircularProgress, Stack } from '@mui/material';
+import { useUnit } from 'effector-react';
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { CircularProgress, Stack } from '@mui/material';
-import { CountryDescCard } from './CountryDescCard/CountryDescCard';
-import { useUnit } from 'effector-react';
+
 import { CountryType } from '../../types/CountryType';
+import { CountryDescCard } from './CountryDescCard/CountryDescCard';
 import { $countryStoreGetStatus, fetchCountryByNameFx } from './model/countryStore';
 
 export const CountryPage = () => {

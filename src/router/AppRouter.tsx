@@ -1,7 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
-import { routes } from './routes';
+
 import { AllCountryPage } from '../Pages/AllCountryPage/AllCountryPage';
 import { CountryPage } from '../Pages/CountryPage/CountryPage';
+import { routes } from './routes';
 
 export const AppRouter = () => {
     return (

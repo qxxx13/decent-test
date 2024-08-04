@@ -1,11 +1,12 @@
-import { useEffect, useMemo, useState } from 'react';
-import { $allCountryStoreGetStatus, clearCountryStore, fetchAllCountryFx } from './model/allCountryStore';
-import { useUnit } from 'effector-react';
-import { AllCountryList } from '../../components/AllCountryList/AllCountryList';
-import { CountryType } from '../../types/CountryType';
 import { Box, CircularProgress, Stack, TextField, Typography, useMediaQuery } from '@mui/material';
+import { useUnit } from 'effector-react';
 import { debounce } from 'lodash';
+import { useEffect, useMemo, useState } from 'react';
+
+import { AllCountryList } from '../../components/AllCountryList/AllCountryList';
 import { ErrorHandler } from '../../components/ErrorHandler/ErrorHandler';
+import { CountryType } from '../../types/CountryType';
+import { $allCountryStoreGetStatus, clearCountryStore, fetchAllCountryFx } from './model/allCountryStore';
 
 export const AllCountryPage = () => {
     const [searchValue, setSearchValue] = useState('');

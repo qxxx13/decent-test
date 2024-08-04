@@ -1,7 +1,8 @@
-import { Card, CardContent, CardMedia, Divider, IconButton, Link, Stack, Typography, useMediaQuery } from '@mui/material';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import { CountryType } from '../../../types/CountryType';
+import { Card, CardContent, CardMedia, Divider, IconButton, Link, Stack, Typography, useMediaQuery } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
+
+import { CountryType } from '../../../types/CountryType';
 
 type CountryDescCardProps = {
     country: CountryType;

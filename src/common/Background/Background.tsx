@@ -2,6 +2,7 @@ import { Container, ISourceOptions, MoveDirection, OutMode } from '@tsparticles/
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
 import { useEffect, useMemo, useState } from 'react';
+
 import options from './options';
 
 export const Background = () => {

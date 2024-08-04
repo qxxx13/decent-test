@@ -1,4 +1,5 @@
 import { Stack } from '@mui/material';
+
 import { CountryType } from '../../types/CountryType';
 import { CountryCard } from './CountryCard/CountryCard';
 

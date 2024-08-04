@@ -1,6 +1,7 @@
 import { Card, CardActionArea, CardContent, CardMedia, Typography, useMediaQuery } from '@mui/material';
-import { CountryType } from '../../../types/CountryType';
 import { useNavigate } from 'react-router-dom';
+
+import { CountryType } from '../../../types/CountryType';
 
 type CountryCardProps = {
     country: CountryType;

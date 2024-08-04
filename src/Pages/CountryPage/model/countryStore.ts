@@ -1,4 +1,5 @@
 import { combine, createEffect, createStore, restore } from 'effector';
+
 import { CountryType } from '../../../types/CountryType';
 import { getCountryByName } from '../api/countryPageApi';
 
