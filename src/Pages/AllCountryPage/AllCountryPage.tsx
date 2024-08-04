@@ -6,7 +6,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { AllCountryList } from '../../components/AllCountryList/AllCountryList';
 import { ErrorHandler } from '../../components/ErrorHandler/ErrorHandler';
 import { CountryType } from '../../types/CountryType';
-import { $allCountryStoreGetStatus, clearCountryStore, fetchAllCountryFx } from './model/allCountryStore';
+import { $allCountryStoreGetStatus, clearAllCountryStore, fetchAllCountryFx } from './model/allCountryStore';
 
 export const AllCountryPage = () => {
     const [searchValue, setSearchValue] = useState('');
@@ -23,14 +23,14 @@ export const AllCountryPage = () => {
         fetchAllCountryFx({ searchValue: searchValue });
 
         return () => {
-            clearCountryStore();
+            clearAllCountryStore();
             debounceSearch.cancel();
         };
     }, [searchValue]);
 
     return (
         <Box sx={{ p: 2 }}>
-            <Stack flexDirection={isDesktop ? 'row' : 'column'} justifyContent="space-between" sx={{ mb: 2 }}>
+            <Stack flexDirection={isDesktop ? 'row' : 'column'} justifyContent="space-between" sx={{ mb: 2, p: '0 16px 0 16px' }}>
                 <Typography variant="h3">Restcountries API</Typography>
                 <TextField label="search by name" onChange={handleSearchInput} />
             </Stack>

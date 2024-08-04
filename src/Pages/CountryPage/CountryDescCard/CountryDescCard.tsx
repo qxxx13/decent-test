@@ -1,4 +1,4 @@
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import { Card, CardContent, CardMedia, Divider, IconButton, Link, Stack, Typography, useMediaQuery } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
@@ -41,8 +41,8 @@ export const CountryDescCard: React.FC<CountryDescCardProps> = ({ country }) => 
 
     return (
         <>
-            <IconButton sx={{ position: 'absolute', left: 16, top: 16 }} onClick={goBack}>
-                <ArrowBackIosIcon />
+            <IconButton sx={{ position: 'absolute', left: 16, top: 16, border: 'solid' }} onClick={goBack} color="secondary">
+                <ArrowBackIosNewIcon />
             </IconButton>
             <Card sx={{ width: 'fit-content' }}>
                 <Stack flexDirection={isDesktop ? 'row' : 'column'}>

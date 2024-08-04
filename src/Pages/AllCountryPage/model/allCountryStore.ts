@@ -13,10 +13,10 @@ $allCountryStore.on(fetchAllCountryFx.doneData, (_, allCountry) => allCountry);
 
 export const $fetchError = restore<Error>(fetchAllCountryFx.failData, null);
 
-export const clearCountryStore = createEvent();
+export const clearAllCountryStore = createEvent();
 
-$allCountryStore.on(clearCountryStore, (store) => (store = []));
-$fetchError.on(clearCountryStore, (errorStore) => (errorStore = null));
+$allCountryStore.on(clearAllCountryStore, (store) => (store = []));
+$fetchError.on(clearAllCountryStore, (errorStore) => (errorStore = null));
 
 export const $allCountryStoreGetStatus = combine({
     isLoading: fetchAllCountryFx.pending,
